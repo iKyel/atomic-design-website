@@ -1,5 +1,19 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import ad1 from "../assets/images/ad1.png"
+import new1 from "../assets/images/new1.png"
+import new2 from "../assets/images/new2.png"
+import new3 from "../assets/images/new3.png"
+import new4 from "../assets/images/new4.png"
+import new5 from "../assets/images/new5.png"
+import new6 from "../assets/images/new6.png"
+import new7 from "../assets/images/new7.jpg"
+import new8 from "../assets/images/new8.jpg"
+import pic1 from "../assets/images/hn_pic1.png"
+import pic2 from "../assets/images/hn_pic2.png"
+import pic3 from "../assets/images/hn_pic3.png"
+import pic4 from "../assets/images/hn_pic4.png"
 
 const Content = () => {
   return (
@@ -158,7 +172,7 @@ const Content = () => {
                                             <div className="left">
                                                 <div className="left-photo">
                                                     <a href="#">
-                                                        <img src="" />
+                                                        <img src={new1} />
                                                     </a>
                                                 </div>
                                                 <div className="title">
@@ -179,7 +193,7 @@ const Content = () => {
                                             <div className="right">
                                                 <div className="item">
                                                     <div className="image">
-                                                        <img src="" />
+                                                        <img src={new2} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -197,7 +211,7 @@ const Content = () => {
                                                 </div>
                                                 <div className="item">
                                                     <div className="image">
-                                                        <img src="" />
+                                                        <img src={new3} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -215,7 +229,7 @@ const Content = () => {
                                                 </div>
                                                 <div className="item">
                                                     <div className="photo">
-                                                        <img src="" />
+                                                        <img src={new4} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -258,7 +272,7 @@ const Content = () => {
                                             <div className="left">
                                                 <div className="left-photo">
                                                     <a href="#">
-                                                        <img src="" />
+                                                        <img src={new5} />
                                                     </a>
                                                 </div>
                                                 <div className="title">
@@ -280,7 +294,7 @@ const Content = () => {
                                             <div className="right">
                                                 <div className="item">
                                                     <div className="image">
-                                                        <img src="" />
+                                                        <img src={new6} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -298,7 +312,7 @@ const Content = () => {
                                                 </div>
                                                 <div className="item">
                                                     <div className="image">
-                                                        <img src="" />
+                                                        <img src={new7} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -316,7 +330,7 @@ const Content = () => {
                                                 </div>
                                                 <div className="item">
                                                     <div className="photo">
-                                                        <img src="" />
+                                                        <img src={new8} />
                                                     </div>
                                                     <div className="chitiet">
                                                         <div className="title">
@@ -437,7 +451,7 @@ const Content = () => {
                             </div>
                         </div>
                         <div className="ad1">
-                            <a href="#"><img src="" /></a>
+                            <a href="#"><img src={ad1} /></a>
                         </div>
                         <div className="item cau-hoi-trong-tuan">
                             <div className="title">
@@ -574,7 +588,7 @@ const Content = () => {
                             <div className="ban-tin">
                                 <div className="new">
                                     <div className="photo">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><img src={pic1} /></a>
                                     </div>
                                     <div className="title">
                                         <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản
@@ -583,7 +597,7 @@ const Content = () => {
                                 </div>
                                 <div className="new">
                                     <div className="photo">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><img src={pic2} /></a>
                                     </div>
                                     <div className="title">
                                         <p>Chính sách Bảo hiểm xã hội năm 2018 có gì mới?</p>
@@ -591,7 +605,7 @@ const Content = () => {
                                 </div>
                                 <div className="new">
                                     <div className="photo">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><img src={pic3} /></a>
                                     </div>
                                     <div className="title">
                                         <p>05 Trường hợp cảnh sát giao thông được yêu cầu dừng xe</p>
@@ -599,7 +613,7 @@ const Content = () => {
                                 </div>
                                 <div className="new">
                                     <div className="photo">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><img src={pic4} /></a>
                                     </div>
                                     <div className="title">
                                         <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì
