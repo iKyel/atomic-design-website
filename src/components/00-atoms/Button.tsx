@@ -2,19 +2,19 @@ import React from 'react';
 import Button from '@mui/material/Button';
 
 interface CustomButtonProps {
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
   variant?: 'text' | 'outlined' | 'contained';
-  color?: 'primary' | 'secondary';
-  disabled?: boolean;
+  color?: 'primary' | 'secondary' | 'inherit';
+  className?: string;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ onClick, children, variant = 'contained', color = 'primary', disabled = false }) => (
+const CustomButton: React.FC<CustomButtonProps> = ({ onClick, children, variant = 'text', color = 'inherit', className }) => (
   <Button
     onClick={onClick}
     variant={variant}
     color={color}
-    disabled={disabled}
+    className={className}
   >
     {children}
   </Button>
