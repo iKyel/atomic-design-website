@@ -191,6 +191,10 @@ h4 {
   background-color: blue;
 }
 
+.nav-container {
+  display: flex;
+}
+
 .banner {
   background: url(./assets/images/banner.png) no-repeat center center;
   width: 100%;
@@ -494,7 +498,6 @@ h4 {
 .main_content .content-left_main .news .content .tin-tuc-chinh .noi-dung .right .item {
   display: flex;
   padding-bottom: 30px;
-  height: 102px;
 }
 .main_content .content-left_main .news .content .tin-tuc-chinh .noi-dung .right .item h3 {
   font-size: 16px;

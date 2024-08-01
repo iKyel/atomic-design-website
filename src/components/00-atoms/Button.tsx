@@ -7,14 +7,16 @@ interface CustomButtonProps {
   variant?: 'text' | 'outlined' | 'contained';
   color?: 'primary' | 'secondary' | 'inherit';
   className?: string;
+  sx?: object;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ onClick, children, variant = 'text', color = 'inherit', className }) => (
+const CustomButton: React.FC<CustomButtonProps> = ({ onClick, children, variant = 'text', color = 'inherit', className, sx }) => (
   <Button
     onClick={onClick}
     variant={variant}
     color={color}
     className={className}
+    sx={{ padding: '16px', ...sx }}
   >
     {children}
   </Button>

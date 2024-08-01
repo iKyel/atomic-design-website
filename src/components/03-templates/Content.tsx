@@ -1,19 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import ad1 from "../assets/images/ad1.png"
-import new1 from "../assets/images/new1.png"
-import new2 from "../assets/images/new2.png"
-import new3 from "../assets/images/new3.png"
-import new4 from "../assets/images/new4.png"
-import new5 from "../assets/images/new5.png"
-import new6 from "../assets/images/new6.png"
-import new7 from "../assets/images/new7.jpg"
-import new8 from "../assets/images/new8.jpg"
-import pic1 from "../assets/images/hn_pic1.png"
-import pic2 from "../assets/images/hn_pic2.png"
-import pic3 from "../assets/images/hn_pic3.png"
-import pic4 from "../assets/images/hn_pic4.png"
+import ad1 from "../../assets/images/ad1.png"
+import new1 from "../../assets/images/new1.png"
+import new2 from "../../assets/images/new2.png"
+import new3 from "../../assets/images/new3.png"
+import new4 from "../../assets/images/new4.png"
+import new5 from "../../assets/images/new5.png"
+import new6 from "../../assets/images/new6.png"
+import new7 from "../../assets/images/new7.jpg"
+import new8 from "../../assets/images/new8.jpg"
+import pic1 from "../../assets/images/hn_pic1.png"
+import pic2 from "../../assets/images/hn_pic2.png"
+import pic3 from "../../assets/images/hn_pic3.png"
+import pic4 from "../../assets/images/hn_pic4.png"
+import pic5 from "../../assets/images/hn_pic5.png"
 
 const Content = () => {
   return (
@@ -622,7 +623,7 @@ const Content = () => {
                                 </div>
                                 <div className="new">
                                     <div className="photo">
-                                        <a href="#"><img src="" /></a>
+                                        <a href="#"><img src={pic5} /></a>
                                     </div>
                                     <div className="title">
                                         <p>Chính sách Bảo hiểm xã hội năm 2018 có gì mới?</p>

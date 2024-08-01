@@ -1,13 +1,16 @@
 import React from 'react';
-import { SvgIconProps } from '@mui/material/SvgIcon';
-import Icon from '@mui/material/Icon';
+import IconButton from '@mui/material/IconButton';
 
-interface CustomIconProps extends SvgIconProps {
-  name: string;
+interface CustomIconButtonProps {
+  icon: React.ReactElement;
+  href: string;
+  className?: string;
 }
 
-const CustomIcon: React.FC<CustomIconProps> = ({ name, ...props }) => (
-  <Icon {...props} component="svg">{name}</Icon>
+const Icon: React.FC<CustomIconButtonProps> = ({ icon, href, className }) => (
+  <IconButton component="a" href={href} className={className}>
+    {icon}
+  </IconButton>
 );
 
-export default CustomIcon;
+export default Icon;

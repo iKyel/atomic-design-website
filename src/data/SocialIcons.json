@@ -1,0 +1,6 @@
+[
+  { "icon": "FacebookIcon", "color": "primary", "href": "https://facebook.com" },
+  { "icon": "EmailIcon", "color": "primary", "href": "mailto:someone@example.com" },
+  { "icon": "TwitterIcon", "color": "primary", "href": "https://twitter.com" },
+  { "icon": "YouTubeIcon", "color": "primary", "href": "https://youtube.com" }
+]
