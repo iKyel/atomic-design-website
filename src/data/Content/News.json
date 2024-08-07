@@ -6,13 +6,29 @@
         "title": "Cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn",
         "date": "Thứ 4, 27/12/2017",
         "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
-        "image": "new1.png"
+        "image": "new1.png",
+        "important": true
       },
       {
         "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
         "date": "Thứ 4, 27/12/2017",
         "content": "",
-        "image": "new2.png"
+        "image": "new2.png",
+        "important": false
+      },
+      {
+        "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new3.png",
+        "important": false
+      },
+      {
+        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new4.png",
+        "important": false
       }
     ]
   },
@@ -23,7 +39,62 @@
         "title": "7 năm tiêu dè sẻn dù lương tăng gấp 3, vợ chồng tôi có nhà, xe",
         "date": "Thứ 4, 27/12/2017",
         "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
-        "image": "new5.png"
+        "image": "new5.png",
+        "important": true
+      },
+      {
+        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new6.png",
+        "important": false
+      },
+      {
+        "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new7.jpg",
+        "important": false
+      },
+      {
+        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new8.jpg",
+        "important": false
+      }
+    ]
+  },
+  {
+    "category": "Hôn Nhân",
+    "items": [
+      {
+        "title": "7 năm tiêu dè sẻn dù lương tăng gấp 3, vợ chồng tôi có nhà, xe",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
+        "image": "new5.png",
+        "important": true
+      },
+      {
+        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new6.png",
+        "important": false
+      },
+      {
+        "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new7.jpg",
+        "important": false
+      },
+      {
+        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
+        "date": "Thứ 4, 27/12/2017",
+        "content": "",
+        "image": "new8.jpg",
+        "important": false
       }
     ]
   }

@@ -1,285 +1,45 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-import new_III_1 from "../../assets/images/new_III_1.png"
-import new_III_2 from "../../assets/images/new_III_2.png"
-import new_III_3 from "../../assets/images/new_III_3.png"
+import React from "react";
+import news from "../../data/MainNews.json"; // Import dữ liệu từ file JSON
 
 const MainNews = () => {
   return (
     <>
       <div className="container main_news">
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>DÂN SỰ</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_1} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Sửa Luật Đất đai để người nước ngoài được sở hữu nhà tại Việt Nam</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>ĐẤT ĐAI</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_2} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Sửa quy định về đối tượng không chịu thuế GTGT </h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>HÔN NHÂN</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_3} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Tái hôn với chồng cũ thực hiện như thế nào ?</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>HÀNH CHÍNH</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_1} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Công chức kiện đòi lương, tòa hành chính xử?</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>DÂN SỰ</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_1} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Sửa Luật Đất đai để người nước ngoài được sở hữu nhà tại Việt Nam</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>ĐẤT ĐAI</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_2} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Sửa quy định về đối tượng không chịu thuế GTGT </h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>HÔN NHÂN</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_3} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Tái hôn với chồng cũ thực hiện như thế nào ?</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước
-                                        sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="new-item">
-                    <div className="loai-tin">
-                        <p>HÀNH CHÍNH</p>
-                        <div className="line">
-                            <div className="red"></div>
-                            <div className="gray"></div>
-                        </div>
-                    </div>
-                    <div className="photo">
-                        <a href="#"><img src={new_III_1} /></a>
-                    </div>
-                    <div className="text">
-                        <div className="title">
-                            <h3>Công chức kiện đòi lương, tòa hành chính xử?</h3>
-                        </div>
-                        <div className="paragraph">
-                            <ul>
-                                <li>
-                                    <p>Khi Nhà nước thu hồi đất mà các tổ chức, cá nhân phải di chuyển tài sản thì Nhà
-                                        nước sẽ bồi thường những?</p>
-                                </li>
-                                <li>
-                                    <p>Chi trả tiền bồi thường, hỗ trợ, tái định cư được quy định như thế nào?</p>
-                                </li>
-                                <li>
-                                    <p>Đăng ký đất đai là gì? và được thực hiện như thế nào?</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
+        {news.map((item, index) => (
+          <div className="new-item" key={index}>
+            <div className="loai-tin">
+              <p>{item.category}</p>
+              <div className="line">
+                <div className="red"></div>
+                <div className="gray"></div>
+              </div>
             </div>
+            <div className="photo">
+              <a href="#">
+                <img src={require(`../../assets/images/${item.image}`)} />
+              </a>
+            </div>
+            <div className="text">
+              <div className="title">
+                <h3>{item.title}</h3>
+              </div>
+              <div className="paragraph">
+                <ul>
+                  {item.paragraphs.map((paragraph, pIndex) => (
+                    <li key={pIndex}>
+                      <p>{paragraph}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default MainNews
+export default MainNews;

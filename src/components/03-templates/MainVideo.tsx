@@ -6,8 +6,9 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import videos from "../../data/Video.json";
 
 const MainVideo = () => {
-  const mainVideo = videos[0];
-  const sideVideos = videos.slice(1);
+  const importantVideos = videos.filter(video => video.important === "true");
+  const nonImportantVideos = videos.filter(video => video.important === "false");
+
   return (
     <>
       <div className="main_video">
@@ -38,48 +39,48 @@ const MainVideo = () => {
             <div className="gray"></div>
           </div>
           <div className="content">
-            {mainVideo && (
-              <div className="content_left">
-                <div className="photo">
-                  <a href="#">
-                    <img
-                      src={require(`../../assets/images/${mainVideo.image}`)}
-                      alt={mainVideo.title}
-                    />
-                  </a>
-                </div>
-                <div className="text">
-                  <div className="title">
+            <div className="content_left">
+              {importantVideos.map((video, index) => (
+                <div className="left-item" key={index}>
+                  <div className="photo">
                     <a href="#">
-                      <h3>{mainVideo.title}</h3>
+                      <img
+                        src={require(`../../assets/images/${video.image}`)}
+                        alt={video.title}
+                      />
                     </a>
                   </div>
-                  <div className="date gray-content">
-                    <i className="fa-regular fa-clock"></i>
-                    <p className="gray-content">{mainVideo.date}</p>
-                  </div>
-                  <div className="cont">
-                    <p>{mainVideo.description}</p>
+                  <div className="text">
+                    <div className="title">
+                      <a href="#">
+                        <h3>{video.title}</h3>
+                      </a>
+                    </div>
+                    <div className="date gray-content">
+                      <i className="fa-regular fa-clock"></i>
+                      <p className="gray-content">{video.date}</p>
+                    </div>
+                    <div className="cont">
+                      <p>{video.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
-
+              ))}
+            </div>
             <div className="content_right">
-              {sideVideos.map((video, index) => (
+              {nonImportantVideos.map((video, index) => (
                 <div className="item" key={index}>
                   <div className="photo">
                     <a href="#">
                       <img
                         src={require(`../../assets/images/${video.image}`)}
-                        alt={mainVideo.title}
+                        alt={video.title}
                       />
                     </a>
                   </div>
                   <div className="title">
                     <h3>
                       {video.title}
-
                       <i className="fa-solid fa-video">
                         <VideocamIcon />
                       </i>
