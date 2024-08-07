@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import HomeIcon from '@mui/icons-material/Home';
@@ -5,6 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import GoogleIcon from '@mui/icons-material/Google';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import lg2 from "../../assets/images/lg2.png"
 const Footer = () => {
   return (
     <div>
@@ -46,7 +48,7 @@ const Footer = () => {
       <div className="main_footer">
         <div className="container main_footer_content">
           <div className="main_footer_content_left">
-            <div className="logo">{/* <img src="" /> */}</div>
+            <div className="logo"><img src={lg2} /></div>
             <div className="location">
               <li className="item">
                 <p>Tòa soạn: Số 60, Dương Đình Nghệ, Cầu Giấy, Hà Nội</p>

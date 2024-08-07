@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import new_III_1 from "../../assets/images/new_III_1.png"
+import new_III_2 from "../../assets/images/new_III_2.png"
+import new_III_3 from "../../assets/images/new_III_3.png"
 
 const MainNews = () => {
   return (
@@ -15,7 +18,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_1} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -50,7 +53,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_2} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -83,7 +86,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_3} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -116,7 +119,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_1} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -149,7 +152,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_1} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -182,7 +185,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_2} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -215,7 +218,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_3} /></a>
                     </div>
                     <div className="text">
                         <div className="title">
@@ -249,7 +252,7 @@ const MainNews = () => {
                         </div>
                     </div>
                     <div className="photo">
-                        <a href="#"><img src="" /></a>
+                        <a href="#"><img src={new_III_1} /></a>
                     </div>
                     <div className="text">
                         <div className="title">

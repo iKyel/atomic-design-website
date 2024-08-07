@@ -6,7 +6,7 @@
 import Footer from "./Footer";
 import MainNews from "./MainNews";
 import MainVideo from "./MainVideo";
-import MainContent from "./MainContent";
+import MainContent from "./Content/MainContent";
 
 const Content = () => {
   return (

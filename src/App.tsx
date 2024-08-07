@@ -7,15 +7,11 @@ import "./App.css";
 // import NavBar from './components/NavBar';
 // import Banner from './components/Banner';
 // import Content from './components/Content';
-import Header from "./components/03-templates/Header";
-import Banner from "./components/03-templates/Banner";
-import Content from "./components/03-templates/Content";
+import HomePage from "./components/04-pages/HomePage";
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Content />
+      <HomePage />
     </>
 
     // <div className="wrapper">
