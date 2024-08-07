@@ -2,10 +2,11 @@ import React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import CustomButton from '../00-atoms/Button';
+import { Link } from 'react-router-dom';
 
 interface NavItemProps {
   label: string;
-  items?: string[];
+  items?: { label: string; path: string }[];
 }
 
 const NavItem: React.FC<NavItemProps> = ({ label, items }) => {
@@ -30,7 +31,14 @@ const NavItem: React.FC<NavItemProps> = ({ label, items }) => {
         onClose={handleClose}
       >
         {items?.map((item, index) => (
-          <MenuItem key={index} onClick={handleClose}>{item}</MenuItem>
+          <MenuItem
+            key={index}
+            component={Link}
+            to={item.path} 
+            onClick={handleClose}
+          >
+            {item.label}
+          </MenuItem>
         ))}
       </Menu>
     </div>

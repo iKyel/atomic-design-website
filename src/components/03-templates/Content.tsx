@@ -16,7 +16,6 @@ const Content = () => {
         <MainContent />
         <MainVideo />
         <MainNews />
-        <Footer />
         {/* <!---------------- //content ------------------> */}
       </div>
     </div>

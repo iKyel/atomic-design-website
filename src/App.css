@@ -418,7 +418,7 @@ h4 {
   line-height: 40px;
 }
 .main_content .content-left_main .news .content .tin-tuc-chinh {
-  padding-top: 50px;
+
 }
 .main_content .content-left_main .news .content .tin-tuc-chinh .tin-tuc {
   margin-bottom: 40px;
@@ -913,7 +913,6 @@ h4 {
     padding-right: 0px;
   }
   .main_content .content-left_main .hot-new .infor {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;

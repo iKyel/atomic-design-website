@@ -8,32 +8,18 @@ import "./App.css";
 // import Banner from './components/Banner';
 // import Content from './components/Content';
 import HomePage from "./components/04-pages/HomePage";
+import TinMoi from "./components/04-pages/TinMoi";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-      <HomePage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/tin-moi" element={<TinMoi />} />
+      </Routes>
+    </Router>
     </>
-
-    // <div className="wrapper">
-    //   {/* <!---------------- header -----------------> */}
-    //   <Header />
-    //   {/* <!---------------- //header ------------------> */}
-
-    //   {/* <!---------------- ads ------------------> */}
-    //   <Ads />
-    //   {/* <!---------------- //ads ------------------> */}
-
-    //   {/* <!---------------- navbar ------------------> */}
-    //   <NavBar />
-    //   {/* <!---------------- //navbar ------------------> */}
-
-    //   {/* <!---------------- banner ------------------> */}
-    //   <Banner />
-    //   {/* <!---------------- //banner ------------------> */}
-
-    //   {/* <!---------------- content ------------------> */}
-    //   <Content />
-    // </div>
   );
 }
 
