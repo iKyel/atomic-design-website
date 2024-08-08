@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import data from '../../../../data/Content/ContentTop.json';
+import React from "react";
+import { useParams } from "react-router-dom";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import ShareIcon from "@mui/icons-material/Share";
 import PrintIcon from "@mui/icons-material/Print";
@@ -10,49 +10,51 @@ import XIcon from "@mui/icons-material/X";
 import GoogleIcon from "@mui/icons-material/Google";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { useNewsStore } from "../../../../context/newContext"; 
+import { NewsItem } from "../../../../store/newStore";
 
 const MainContentLeftTop = () => {
-  const {
-    title,
-    comments,
-    shares,
-    location,
-    date,
-    content,
-    additionalContent,
-    tags
-  } = data;
+  const { title } = useParams(); // Get the title from the URL
+  const newsStore = useNewsStore();
+  
+  const item: NewsItem | undefined = newsStore.news
+    .flatMap(category => category.items)
+    .find(item => item.title === decodeURIComponent(title || ''));
+  
+  if (!item) {
+    return <div>News item not found</div>;
+  }
 
   return (
     <>
       <div className="hot-new">
-        <h2 className="title">{title}</h2>
+        <h2 className="title">{item.title}</h2>
         <div className="infor">
           <div className="infor-left">
             <a href="#" className="icon comment">
               <ChatBubbleIcon />
-              <span>{comments}</span>
+              <span>{item.comments}</span>
             </a>
             <a href="#" className="icon share">
               <ShareIcon />
-              <span>{shares}</span>
+              <span>{item.shares}</span>
             </a>
           </div>
           <div className="infor-right">
-            <p className="VN">{location}</p>
+            <p className="VN">{item.location}</p>
             <span>|</span>
-            <p className="date">{date}</p>
+            <p className="date">{item.date}</p>
             <a href="#" className="icon">
               <PrintIcon />
             </a>
           </div>
         </div>
         <div className="content">
-          {additionalContent.map((item, index) => (
+          {item.additionalContent.map((content, index) => (
             <React.Fragment key={index}>
-              <h4>{item.title}</h4>
+              <h4>{content.title}</h4>
               <ul>
-                {item.subContent.map((subItem, subIndex) => (
+                {content.subContent.map((subItem, subIndex) => (
                   <li key={subIndex} className="primary-color">
                     <ChevronRightIcon />
                     <p className="gray-content">{subItem.text}</p>
@@ -61,7 +63,8 @@ const MainContentLeftTop = () => {
               </ul>
             </React.Fragment>
           ))}
-          <p className="text">{content}</p>
+
+          <p className="text">{item.content}</p>
           <div className="btn-xemthem">
             <a href="#">
               <button>
@@ -91,9 +94,9 @@ const MainContentLeftTop = () => {
               </div>
             </div>
             <div className="tag">
-              {tags.map((tag, index) => (
+              {item.tags.map((tag, index) => (
                 <div className="inner" key={index}>
-                  <a href="#">
+                  <a href={`/tags/${encodeURIComponent(tag)}`}>
                     <p>{tag}</p>
                   </a>
                 </div>

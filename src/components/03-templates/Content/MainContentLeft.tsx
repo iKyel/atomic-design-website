@@ -4,8 +4,7 @@
 
 // icons
 
-// components
-import MainContentLeftTop from "./Left/MainContentLeftTop";
+// components;
 import News from "./Left/News";
 
 

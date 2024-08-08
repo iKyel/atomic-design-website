@@ -3,32 +3,92 @@
     "category": "ĐẤT ĐAI",
     "items": [
       {
+        "id": 1,
         "title": "Cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn",
         "date": "Thứ 4, 27/12/2017",
         "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
         "image": "new1.png",
-        "important": true
+        "important": true,
+        "comments": 45,
+        "shares": 12,
+        "location": "Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Chi tiết vụ việc",
+            "subContent": [
+              {
+                "text": "Ông Đinh La Thăng đang đối mặt với nhiều cáo buộc nghiêm trọng liên quan đến tài chính."
+              }
+            ]
+          }
+        ],
+        "tags": ["Pháp luật", "Tin tức"]
       },
       {
+        "id": 2,
         "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new2.png",
-        "important": false
+        "important": false,
+        "comments": 78,
+        "shares": 23,
+        "location": "Thanh Hóa, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Tin liên quan",
+            "subContent": [
+              {
+                "text": "Phó chủ tịch Thanh Hóa bị kỷ luật do liên quan đến vụ việc đáng chú ý."
+              }
+            ]
+          }
+        ],
+        "tags": ["Chính trị", "Hành chính"]
       },
       {
+        "id": 3,
         "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new3.png",
-        "important": false
+        "important": false,
+        "comments": 34,
+        "shares": 9,
+        "location": "Cai Lậy, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Chi tiết vụ án",
+            "subContent": [
+              {
+                "text": "Vụ việc xảy ra tại BOT Cai Lậy đã thu hút nhiều sự chú ý từ cộng đồng."
+              }
+            ]
+          }
+        ],
+        "tags": ["An ninh", "Giao thông"]
       },
       {
+        "id": 4,
         "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new4.png",
-        "important": false
+        "important": false,
+        "comments": 56,
+        "shares": 14,
+        "location": "Thanh Hóa, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Phân tích vụ việc",
+            "subContent": [
+              {
+                "text": "Việc không có tên trên lịch công tác đã gây ra sự bất ngờ lớn trong dư luận."
+              }
+            ]
+          }
+        ],
+        "tags": ["Chính trị", "Quản lý"]
       }
     ]
   },
@@ -36,98 +96,92 @@
     "category": "Hôn Nhân",
     "items": [
       {
+        "id": 5,
         "title": "7 năm tiêu dè sẻn dù lương tăng gấp 3, vợ chồng tôi có nhà, xe",
         "date": "Thứ 4, 27/12/2017",
         "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
         "image": "new5.png",
-        "important": true
+        "important": true,
+        "comments": 90,
+        "shares": 45,
+        "location": "Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Kinh nghiệm tài chính",
+            "subContent": [
+              {
+                "text": "Lời khuyên từ những người đã thành công trong việc quản lý tài chính cá nhân."
+              }
+            ]
+          }
+        ],
+        "tags": ["Tài chính", "Đầu tư"]
       },
       {
+        "id": 6,
         "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new6.png",
-        "important": false
+        "important": false,
+        "comments": 67,
+        "shares": 20,
+        "location": "Thanh Hóa, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Thông tin bổ sung",
+            "subContent": [
+              {
+                "text": "Các diễn biến mới nhất liên quan đến Phó chủ tịch Thanh Hóa."
+              }
+            ]
+          }
+        ],
+        "tags": ["Chính trị", "Địa phương"]
       },
       {
+        "id": 7,
         "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new7.jpg",
-        "important": false
+        "important": false,
+        "comments": 44,
+        "shares": 15,
+        "location": "Cai Lậy, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Chi tiết sự việc",
+            "subContent": [
+              {
+                "text": "Thông tin mới nhất về vụ việc tại BOT Cai Lậy."
+              }
+            ]
+          }
+        ],
+        "tags": ["Giao thông", "An ninh"]
       },
       {
+        "id": 8,
         "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
         "date": "Thứ 4, 27/12/2017",
-        "content": "",
+        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
         "image": "new8.jpg",
-        "important": false
-      }
-    ]
-  },
-  {
-    "category": "Hôn Nhân",
-    "items": [
-      {
-        "title": "7 năm tiêu dè sẻn dù lương tăng gấp 3, vợ chồng tôi có nhà, xe",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
-        "image": "new5.png",
-        "important": true
-      },
-      {
-        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new6.png",
-        "important": false
-      },
-      {
-        "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new7.jpg",
-        "important": false
-      },
-      {
-        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new8.jpg",
-        "important": false
-      }
-    ]
-  },
-  {
-    "category": "Hôn Nhân",
-    "items": [
-      {
-        "title": "7 năm tiêu dè sẻn dù lương tăng gấp 3, vợ chồng tôi có nhà, xe",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "Cơ quan điều tra cáo buộc ông Đinh La Thăng khai báo chưa thành khẩn, né tránh trách nhiệm, hợp thức hóa tài liệu để đối phó.",
-        "image": "new5.png",
-        "important": true
-      },
-      {
-        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new6.png",
-        "important": false
-      },
-      {
-        "title": "Người chém tài xế sau vụ cẩu ôtô ở BOT Cai Lậy được trả tự do",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new7.jpg",
-        "important": false
-      },
-      {
-        "title": "Phó chủ tịch Thanh Hóa không có tên trên lịch công tác sau khi bị kỷ luật",
-        "date": "Thứ 4, 27/12/2017",
-        "content": "",
-        "image": "new8.jpg",
-        "important": false
+        "important": false,
+        "comments": 85,
+        "shares": 30,
+        "location": "Thanh Hóa, Việt Nam",
+        "additionalContent": [
+          {
+            "title": "Những điểm cần lưu ý",
+            "subContent": [
+              {
+                "text": "Các yếu tố quan trọng liên quan đến trường hợp của Phó chủ tịch Thanh Hóa."
+              }
+            ]
+          }
+        ],
+        "tags": ["Chính trị", "Tin tức"]
       }
     ]
   }
