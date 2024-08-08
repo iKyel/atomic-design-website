@@ -2,14 +2,15 @@
 import React from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import newsData from "../../../../data/Content/News.json";
-
+import { useNewsStore } from "../../../../context/newContext"; 
 const News = () => {
+  const newsStore = useNewsStore();
+
   return (
     <>
       <div className="news">
         <div className="content">
-          {newsData.map((category, catIndex) => (
+          {newsStore.news.map((category, catIndex) => (
             <div className="tin-tuc-chinh" key={catIndex}>
               <div className={`tin-tuc ${category.category.toLowerCase()}`}>
                 <div className="title">
