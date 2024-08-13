@@ -1,5 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import newsData from '../data/Content/News.json'; 
+import categoriesData from '../data/Content/Categories.json'; 
 
 export interface AdditionalContent {
   title: string;
@@ -16,43 +17,65 @@ export interface NewsItem {
   comments: number;
   shares: number;
   location: string;
+  categoryId: number; 
   additionalContent: AdditionalContent[];
   tags: string[];
+  category?: string; 
 }
 
-export interface NewsCategory {
-  category: string;
-  items: NewsItem[];
+export interface Category {
+  id: number;
+  name: string;
 }
 
 class NewsStore {
-  news: NewsCategory[] = [];
+  news: NewsItem[] = [];
+  categories: Category[] = [];
 
   constructor() {
     makeAutoObservable(this);
+    this.loadCategories();
     this.loadNews();
   }
 
+  loadCategories() {
+    this.categories = categoriesData;
+  }
+
   loadNews() {
-    this.news = newsData as NewsCategory[];
+    this.news = newsData.map(item => ({
+      ...item,
+      category: this.getCategoryNameById(item.categoryId),
+    }));
+  }
+
+  getCategoryNameById(id: number): string | undefined {
+    const category = this.categories.find(cat => cat.id === id);
+    return category ? category.name : undefined;
   }
 
   get importantNews(): NewsItem[] {
-    return this.news.flatMap(category => category.items.filter(item => item.important));
+    return this.news.filter(item => item.important);
   }
 
-  
-  getNewsByCategory(category: string): NewsItem[] {
-    const categoryData = this.news.find(cat => cat.category === category);
-    return categoryData ? categoryData.items : [];
+  getNewsByCategory(categoryName: string): NewsItem[] {
+    return this.news.filter(item => item.category === categoryName);
+  }
+
+  getNewsByCategories(): { category: string, news: NewsItem[] }[] {
+    return this.categories.map(category => ({
+      category: category.name,
+      news: this.getNewsByCategory(category.name)
+    }));
   }
 
   getTags(): string[] {
     const tags = new Set<string>();
-    this.news.flatMap(category => category.items.forEach(item => item.tags.forEach(tag => tags.add(tag))));
+    this.news.forEach(item => item.tags.forEach(tag => tags.add(tag)));
     return Array.from(tags);
   }
 }
 
 const newsStore = new NewsStore();
+console.log(newsStore.getNewsByCategories());
 export default newsStore;

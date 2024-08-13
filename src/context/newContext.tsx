@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import newsStore from "../store/newStore"; // Adjust the path as necessary
+import newsStore from "../store/newStore"; 
 
 const NewsContext = createContext(newsStore);
 

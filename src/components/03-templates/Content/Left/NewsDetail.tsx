@@ -10,19 +10,17 @@ import XIcon from "@mui/icons-material/X";
 import GoogleIcon from "@mui/icons-material/Google";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { useNewsStore } from "../../../../context/newContext"; 
+import { useNewsStore } from "../../../../context/newContext";
 import { NewsItem } from "../../../../store/newStore";
 
-const MainContentLeftTop = () => {
-  const { title } = useParams(); // Get the title from the URL
+const NewsDetail = () => {
+  const { id } = useParams<{ id: string }>();
   const newsStore = useNewsStore();
   
-  const item: NewsItem | undefined = newsStore.news
-    .flatMap(category => category.items)
-    .find(item => item.title === decodeURIComponent(title || ''));
+  const item: NewsItem | undefined = newsStore.news.find(item => item.id === parseInt(id || '', 10));
   
   if (!item) {
-    return <div>News item not found</div>;
+    return <div>Not Found</div>;
   }
 
   return (
@@ -63,7 +61,6 @@ const MainContentLeftTop = () => {
               </ul>
             </React.Fragment>
           ))}
-
           <p className="text">{item.content}</p>
           <div className="btn-xemthem">
             <a href="#">
@@ -142,4 +139,4 @@ const MainContentLeftTop = () => {
   );
 };
 
-export default MainContentLeftTop;
+export default NewsDetail;
