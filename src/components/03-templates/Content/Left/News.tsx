@@ -1,21 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
+import { Link } from "react-router-dom";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import { useNewsStore } from "../../../../context/newContext"; 
+import { useNewsStore } from "../../../../context/newContext";
 
 const News = () => {
   const newsStore = useNewsStore();
+  const newsByCategories = newsStore.NewsByCategories;
 
   return (
     <div className="news">
       <div className="content">
-        {newsStore.news.map((newsItem, index) => (
-          <div className="tin-tuc-chinh" key={index}>
-            <div className={`tin-tuc ${newsItem.category?.toLowerCase() || ''}`}>
+        {newsByCategories.map((category, categoryIndex) => (
+          <div key={categoryIndex} className="tin-tuc-chinh">
+            <div className={`tin-tuc ${category.category.toLowerCase()}`}>
               <div className="title">
                 <div className="left">
-                  <p>{newsItem.category}</p>
+                  <p>{category.category}</p>
                 </div>
                 <div className="right">
                   <li>
@@ -51,55 +53,59 @@ const News = () => {
               </div>
               <div className="noi-dung">
                 <div className="left">
-                  {newsItem.important && (
-                    <div className="left-item" key={newsItem.id}>
-                      <div className="left-photo">
-                        <Link to={`/news-detail/${encodeURIComponent(newsItem.id)}`}>
-                          <img
-                            src={require(`../../../../assets/images/${newsItem.image}`)}
-                            alt={newsItem.title}
-                          />
-                        </Link>
-                      </div>
-                      <div className="title">
-                        <Link to={`/news-detail/${encodeURIComponent(newsItem.title)}`}>
-                          <h3>{newsItem.title}</h3>
-                        </Link>
-                      </div>
-                      <div className="date gray-content">
-                        <i className="fa-regular fa-clock"></i>
-                        <p className="gray-content">{newsItem.date}</p>
-                      </div>
-                      <div className="cont">
-                        <p>{newsItem.content}</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className="right">
-                  {!newsItem.important && (
-                    <div className="item" key={newsItem.id}>
-                      <div className="image">
-                        <Link to={`/news-detail/${encodeURIComponent(newsItem.id)}`}>
-                          <img
-                            src={require(`../../../../assets/images/${newsItem.image}`)}
-                            alt={newsItem.title}
-                          />
-                        </Link>
-                      </div>
-                      <div className="chitiet">
+                  {category.news
+                    .filter((item) => item.important)
+                    .map((item, itemIndex) => (
+                      <div className="left-item" key={itemIndex}>
+                        <div className="left-photo">
+                          <Link to={`/news-detail/${encodeURIComponent(item.id)}`}>
+                            <img
+                              src={require(`../../../../assets/images/${item.image}`)}
+                              alt={item.title}
+                            />
+                          </Link>
+                        </div>
                         <div className="title">
-                          <Link to={`/news-detail/${encodeURIComponent(newsItem.id)}`}>
-                            <h3>{newsItem.title}</h3>
+                          <Link to={`/news-detail/${encodeURIComponent(item.id)}`}>
+                            <h3>{item.title}</h3>
                           </Link>
                         </div>
                         <div className="date gray-content">
                           <i className="fa-regular fa-clock"></i>
-                          <p className="gray-content">{newsItem.date}</p>
+                          <p className="gray-content">{item.date}</p>
+                        </div>
+                        <div className="cont">
+                          <p>{item.content}</p>
                         </div>
                       </div>
-                    </div>
-                  )}
+                    ))}
+                </div>
+                <div className="right">
+                  {category.news
+                    .filter((item) => !item.important)
+                    .map((item, itemIndex) => (
+                      <div className="item" key={itemIndex}>
+                        <div className="image">
+                          <Link to={`/news-detail/${encodeURIComponent(item.id)}`}>
+                            <img
+                              src={require(`../../../../assets/images/${item.image}`)}
+                              alt={item.title}
+                            />
+                          </Link>
+                        </div>
+                        <div className="chitiet">
+                          <div className="title">
+                            <Link to={`/news-detail/${encodeURIComponent(item.id)}`}>
+                              <h3>{item.title}</h3>
+                            </Link>
+                          </div>
+                          <div className="date gray-content">
+                            <i className="fa-regular fa-clock"></i>
+                            <p className="gray-content">{item.date}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                 </div>
               </div>
             </div>

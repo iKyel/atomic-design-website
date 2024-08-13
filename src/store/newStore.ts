@@ -62,7 +62,7 @@ class NewsStore {
     return this.news.filter(item => item.category === categoryName);
   }
 
-  getNewsByCategories(): { category: string, news: NewsItem[] }[] {
+  get NewsByCategories(): { category: string, news: NewsItem[] }[] {
     return this.categories.map(category => ({
       category: category.name,
       news: this.getNewsByCategory(category.name)
@@ -77,5 +77,4 @@ class NewsStore {
 }
 
 const newsStore = new NewsStore();
-console.log(newsStore.getNewsByCategories());
 export default newsStore;
